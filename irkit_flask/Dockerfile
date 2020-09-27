@@ -5,7 +5,8 @@ FROM python:3
 # apache2-devはmod_wsgiのインストールに必要
 RUN apt-get update && apt-get install -y --no-install-recommends \
     apache2 \
-    apache2-dev
+    apache2-dev && \
+    apt-get clean
 
 COPY requirements.txt /tmp
 
