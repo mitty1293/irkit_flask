@@ -1,0 +1,10 @@
+version: "3"
+services: 
+    irkit_flask:
+        image: irkit_flask
+        container_name: irkit_flask
+        build: ./irkit_flask
+        ports:
+            - "9000:80"
+        volumes: 
+            - ./irkit_flask/app:/var/www/html
