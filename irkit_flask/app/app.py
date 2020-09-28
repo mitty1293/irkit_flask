@@ -21,5 +21,13 @@ def ac-on():
 def ac-off():
     irkit.req_post(AC_OFF_SIG)
 
+@app.route("/heater-on")
+def heater-on():
+    irkit.req_post(HEATER_ON_SIG)
+
+@app.route("/heater-off")
+def heater-off():
+    irkit.req_post(HEATER_OFF_SIG)
+
 if __name__ == '__main__':
     app.run()
