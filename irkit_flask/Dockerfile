@@ -1,4 +1,3 @@
-# ベースイメージ
 FROM python:3
 
 COPY requirements.txt /tmp
