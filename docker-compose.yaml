@@ -8,3 +8,4 @@ services:
             - "9000:80"
         volumes: 
             - ./irkit_flask/app:/var/www/html
+            - ./irkit_flask/apache_logs:/var/log/apache2
