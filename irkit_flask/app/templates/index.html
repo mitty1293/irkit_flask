@@ -13,37 +13,28 @@
 		{% endblock %}
         <div class="container-fluid">
             <p>
-                <div class="row">
-                    <div class="col">
-                        <a class="btn btn-primary" href="/light" role="button">Light</a>
-                    </div>
-                </div>
+                <a class="btn btn-warning btn-lg btn-block" href="/light" role="button">
+                    <img src="../static/light.png">
+                    <span class="display-4">Light</span>
+                </a>
             </p>
             <p>
-                <div class="row">
-                    <div class="col">
-                        <a class="btn btn-primary" href="/ac-on" role="button">ON</a>
-                    </div>
-                    <div class="col">
-                        AC<br>28&#x2103;
-                    </div>
-                    <div class="col">
-                        <a class="btn btn-primary" href="/ac-off" role="button">OFF</a>
-                    </div>
-                </div>
+                <a class="btn btn-primary btn-lg btn-block" href="/ac-on" role="button">
+                    <img src="../static/ac_heater.png">
+                    <span class="display-4">AC 28&#x2103;</span>
+                </a>
+                <a class="btn btn-primary btn-lg btn-block" href="/ac-off" role="button">
+                    <span class="display-4">OFF</span>
+                </a>
             </p>
             <p>
-                <div class="row">
-                    <div class="col">
-                        <a class="btn btn-primary" href="/heater-on" role="button">ON</a>
-                    </div>
-                    <div class="col">
-                        HEATER<br>22&#x2103;
-                    </div>
-                    <div class="col">
-                        <a class="btn btn-primary" href="/heater-off" role="button">OFF</a>
-                    </div>
-                </div>
+                <a class="btn btn-danger btn-lg btn-block" href="/heater-on" role="button">
+                    <img src="../static/ac_heater.png">
+                    <span class="display-4">HEATER 22&#x2103;</span>
+                </a>
+                <a class="btn btn-danger btn-lg btn-block" href="/heater-off" role="button">
+                    <span class="display-4">OFF</span>
+                </a>
             </p>
         </div>
         <!-- Optional JavaScript -->
