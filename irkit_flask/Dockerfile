@@ -2,7 +2,6 @@ FROM python:3.9.0-slim-buster
 
 COPY requirements.txt /tmp
 
-# 必要パッケージインストール
 # apache2-devはmod_wsgiのインストールに必要
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
