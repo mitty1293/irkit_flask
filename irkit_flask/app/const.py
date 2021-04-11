@@ -8,6 +8,6 @@ HEATER_OFF_SIG = {"format":"raw","freq":38,"data":[6881,3228,968,2451,968,2451,9
 
 # IRkit parameters
 # URL = "https://api.getirkit.com/1/messages"
-URL = "192.168.0.122:8000/messages"
+URL = "192.168.0.110/messages"
 CLIKEY = "5ABC4F925613404BA681ADAC1C7008C1"
 DEVID = "9DD274461F2E4989AC9572F18A54F60B"
