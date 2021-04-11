@@ -12,7 +12,6 @@ docker-compose up -d
 ## Setting change
 家電機器の変更、追加により赤外線信号の修正が必要な際は`app.py` `const.py` `index.html` を修正する。
 
-## 課題
-2021年現在、apiサーバ側がTLS1.2以降に対応していないっぽい。<br>
-なのでブラウザからアクセスした際にブラウザ側で接続拒否を起こしている。
-⇒自分でサーバ立てるか。。。
+## Note
+* 2021年現在、apiサーバ側がTLS1.2以降に対応していないため、`IRKit Internet HTTP API`を用いるとブラウザ側で接続が拒否されてしまい、APIに接続できない。
+* そのため、IRkitと同じnetwork内のサーバ（LatitudeE6400 TL-WN725N）にコンテナを立てて実行している。
