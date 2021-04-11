@@ -9,8 +9,8 @@ class Post_irkit:
     def req_post(self, signal):
         msg = json.dumps(signal)
         params = {
-            "clientkey":CLIKEY,
-            "deviceid":DEVID,
+            #"clientkey":CLIKEY,
+            #"deviceid":DEVID,
             "message":msg
         }
         req = requests.post(URL, params=params)
