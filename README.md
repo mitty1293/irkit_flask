@@ -14,5 +14,5 @@ docker-compose up -d
 
 ## Note
 * 2021年現在、apiサーバ側がTLS1.2以降に対応していないため、`IRKit Internet HTTP API`を用いるとブラウザ側で接続が拒否されてしまい、APIに接続できない。
-* そのため、IRkitと同じnetwork内のサーバ（LatitudeE6400 TL-WN725N）にコンテナを立てて実行している。
+* 現在はIRkitと同じnetwork内のサーバ（LatitudeE6400 TL-WN725N）にコンテナを立て `IRKit Device HTTP API` を用いて稼働中。
 * 上記のAPIの違いにより、`const.py`, `post_irkit.py`において差異がある。
